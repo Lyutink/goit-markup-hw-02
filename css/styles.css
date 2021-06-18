@@ -1,60 +1,83 @@
+:root {
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+}
 ul,
 ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ===========header==========*/
-.menu-link {
+.body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
   font-family: "Roboto", sans-serif;
-  font-style: 400;
+}
+/*==Logo==*/
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.logo-color {
+  color: var(--accent-color);
+}
+/*=END= Logo=*/
+.menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .menu-link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .connect-link {
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .connect-link:hover,
 .connect-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* ===========END=== header==========*/
 
 /*=============hero============*/
+.hero {
+  background-color: #2f303a;
+}
 .hero-titel {
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  /*color: #FFFFFF;*/
+  color: var(--primary-white-color);
 }
 .hero-btn {
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
@@ -62,44 +85,33 @@ ol {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 
-  /*color: #FFFFFF;*/
   cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  visibility: hidden;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
-/* =====как сделать кнопку по центру?===
-.hero-btn {
-  display: inline-block;
-  text-align: center;
-}
-*/
-
 /*=============END=== hero============*/
 
 /*==========Преимущества - edvantages====*/
+
 .edvantages-item {
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #212121;
+  color: var(--title-text-color);
 }
 .edvantages-description {
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  color: #757575;
 }
 /*========== END===   Преимущества - edvantages====*/
 
@@ -108,27 +120,103 @@ ol {
 /*==========END===  benefits Чем мы занимаемся======*/
 
 /*==========Team Наша команда======*/
+.team {
+  background-color: #f5f4fa;
+}
 .team-name {
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .team-profession {
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #757575;
 }
 /*==========END=== Team Наша команда======*/
+
+/*==========Footer============*/
+.footer {
+  background-color: #2f303a;
+}
+.footer-address-map {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-address-map:hover,
+.footer-address-map:focus {
+  color: var(--accent-color);
+}
+
+.footer-address-mail {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address-mail:hover,
+.footer-address-mail:focus {
+  color: var(--accent-color);
+}
+
+.footer-address-tell {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address-tell:hover,
+.footer-address-tell:focus {
+  color: var(--accent-color);
+}
+/*==========END=== Footer======*/
+/*=============================*/
+/*******************************/
+/*==============================*/
+/*==========Portfolio===========*/
+/*=====Filter====*/
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/*=====END== Filter=============*/
+
+/*===========Exemples===========*/
+.exemples-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.exemples-work {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*=====END====Exemples============*/
