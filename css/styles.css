@@ -150,6 +150,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--primary-white-color);
 }
 .footer-address-map:hover,
 .footer-address-map:focus {
@@ -212,11 +213,19 @@ a {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
+.exemples-name:hover,
+.exemples-name:focus {
+  color: var(--accent-color);
+}
 .exemples-work {
   font-weight: normal;
   font-size: 16px;
   line-height: 18.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.exemples-work:hover,
+.exemples-work:focus {
+  color: var(--accent-color);
 }
 /*=====END====Exemples============*/
