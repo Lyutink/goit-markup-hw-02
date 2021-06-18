@@ -1,0 +1,134 @@
+ul,
+ol {
+  list-style: none;
+}
+
+/* ===========header==========*/
+.menu-link {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #2196f3;
+}
+.menu-link.current {
+  color: #2196f3;
+}
+.connect-link {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.connect-link:hover,
+.connect-link:focus {
+  color: #2196f3;
+}
+/* ===========END=== header==========*/
+
+/*=============hero============*/
+.hero-titel {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  /*color: #FFFFFF;*/
+}
+.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  /*color: #FFFFFF;*/
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  visibility: hidden;
+}
+/* =====как сделать кнопку по центру?===
+.hero-btn {
+  display: inline-block;
+  text-align: center;
+}
+*/
+
+/*=============END=== hero============*/
+
+/*==========Преимущества - edvantages====*/
+.edvantages-item {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.edvantages-description {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+/*========== END===   Преимущества - edvantages====*/
+
+/*==========benefits Чем мы занимаемся======*/
+/*=============*/
+/*==========END===  benefits Чем мы занимаемся======*/
+
+/*==========Team Наша команда======*/
+.team-name {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.team-profession {
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+/*==========END=== Team Наша команда======*/
